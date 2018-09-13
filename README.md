@@ -3,10 +3,10 @@
 ````
 installOtherVue demo
 ````
->> 1.this.$router.addRoutes([{ path: '/cc', component: CC }])
+> 1.this.$router.addRoutes([{ path: '/cc', component: CC }])
 动态加载路由
 
->> 2.将项目发布成umd 
+> 2.将项目发布成umd 
 > 在项目内加载其他项目的打包js 
 > umd 会在window 上挂载对应vue 对象
 > 通过 Vue.component() 注册成全局
