@@ -24,15 +24,15 @@ export default {
     var _this = this
     this.$router.addRoutes([{ path: '/cc', component: CC }])
     var runtime = document.createElement('script')
-    runtime.src = './fff/runtimeChunk.js'
+    runtime.src = '../otherapp/dist/runtimeChunk.js'
     document.body.appendChild(runtime)
     runtime.onload = function () {
       var vendor = document.createElement('script')
-      vendor.src = './fff/vendors.js'
+      vendor.src = '../otherapp/dist/vendors.js'
       document.body.appendChild(vendor)
       vendor.onload = function () {
         var application = document.createElement('script')
-        application.src = './fff/application.js'
+        application.src = '../otherapp/dist/application.js'
         document.body.appendChild(application)
         application.onload = function () {
           Vue.component('otherapp', window.application.default)
