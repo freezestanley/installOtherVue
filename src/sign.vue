@@ -59,7 +59,7 @@
 </template>
 <script>
 import Draw from './lib/draw'
-import signtxt from './signtxt'
+import signtxt from './components/signtxt.vue'
 import Zip from './lib/zip'
 export default {
   data () {
